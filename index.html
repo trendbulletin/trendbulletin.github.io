@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="msvalidate.01" content="0C930A4ADBB0E8FA189A9C17547982BF" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Email Help Center | Login, Password Recovery & Account Access</title>
+  <meta name="description" content="Browse BellSouth email help articles covering login issues, password recovery, account access, verification codes, inbox settings, and troubleshooting.">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="theme-color" content="#123c78">
+  <link rel="canonical" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb">
+
+  <meta property="og:title" content="BellSouth Email Help Center">
+  <meta property="og:description" content="Explore helpful BellSouth email articles about login, account recovery, passwords, and inbox access.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f3f6fb;
+      color: #263449;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(120deg, #102f60, #1769aa);
+      color: #fff;
+      padding: 24px 7%;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+
+    .header-note {
+      font-size: 14px;
+      opacity: .9;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 75px 20px 65px;
+      color: white;
+      background: linear-gradient(135deg, #164b86, #1685bd);
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 45px);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto 27px;
+      font-size: 17px;
+      color: #edf7ff;
+    }
+
+    .search-box {
+      width: min(100%, 620px);
+      margin: auto;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 17px 20px;
+      border: 0;
+      border-radius: 9px;
+      outline: none;
+      font-size: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.13);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 48px auto;
+      padding: 0 22px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+      color: #153e70;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .section-heading p {
+      color: #64748b;
+    }
+
+    .article-count {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 6px 13px;
+      border-radius: 30px;
+      background: #e2efff;
+      color: #15518d;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .article-card {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border: 1px solid #e2eaf3;
+      border-radius: 12px;
+      padding: 23px;
+      min-height: 190px;
+      box-shadow: 0 5px 18px rgba(20, 55, 90, .05);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .article-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(20, 55, 90, .11);
+    }
+
+    .article-card h3 {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .article-card h3 a {
+      color: #174d83;
+      text-decoration: none;
+    }
+
+    .article-card h3 a:hover {
+      color: #087bb8;
+      text-decoration: underline;
+    }
+
+    .article-card p {
+      color: #68778a;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .read-link {
+      margin-top: auto;
+      color: #0875b5;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .read-link:hover {
+      text-decoration: underline;
+    }
+
+    .no-results {
+      display: none;
+      text-align: center;
+      padding: 35px;
+      color: #64748b;
+      background: #fff;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .info-section {
+      margin-top: 55px;
+      padding: 35px;
+      border-radius: 13px;
+      background: #eaf3fc;
+    }
+
+    .info-section h2 {
+      color: #153e70;
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+
+    .info-section p {
+      color: #52657a;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 55px;
+      padding: 27px 20px;
+      background: #102f60;
+      color: #dce9f8;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer p + p {
+      margin-top: 7px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 20px;
+      }
+
+      .hero {
+        padding: 55px 18px;
+      }
+
+      main {
+        margin: 35px auto;
+        padding: 0 15px;
+      }
+
+      .info-section {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="brand">Email Help Center</div>
+      <div class="header-note">Email access and account guidance</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Email Help & Support Articles</h1>
+    <p>
+      Explore helpful information about BellSouth email login, password recovery,
+      account access, verification, and mailbox settings.
+    </p>
+
+    <div class="search-box">
+      <input
+        type="search"
+        id="articleSearch"
+        placeholder="Search articles by keyword..."
+        aria-label="Search BellSouth help articles"
+      >
+    </div>
+  </section>
+
+  <main>
+    <section aria-labelledby="articles-heading">
+      <div class="section-heading">
+        <h2 id="articles-heading">Browse All BellSouth Articles</h2>
+        <p>Find an article that matches your email access or account question.</p>
+        <span class="article-count">30 helpful articles</span>
+      </div>
+
+      <div class="article-grid" id="articleGrid">
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/what-happened-to-bellsouth-email-login-for-longtime-subscribers-managing-their-original-email-addresses-25-11-2026">What Happened to BellSouth Email Login for Longtime Subscribers? Managing Original Email Addresses</a></h3>
+          <p>Information for longtime subscribers managing their original BellSouth email addresses.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/what-happened-to-bellsouth-email-login-for-longtime-subscribers-managing-their-original-email-addresses-25-11-2026">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/what-happened-to-bellsouth-email-login-for-longtime-subscribers-managing-their-original-email-addresses">What Happened to BellSouth Email Login for Longtime Subscribers?</a></h3>
+          <p>Review information about accessing and managing an established email address.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/what-happened-to-bellsouth-email-login-for-longtime-subscribers-managing-their-original-email-addresses">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/what-happened-to-bellsouth-net-email-login-returning-subscriber-assistance-reviewing-older-account-requirements">BellSouth.net Email Login for Returning Subscribers</a></h3>
+          <p>Review older account requirements and information for returning subscribers.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/what-happened-to-bellsouth-net-email-login-returning-subscriber-assistance-reviewing-older-account-requirements">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/trouble-logging-into-bellsouth-email-and-ways-to-organize-account-information-before-requesting-assistance">Trouble Logging Into BellSouth Email</a></h3>
+          <p>Organize account information before seeking help with email access.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/trouble-logging-into-bellsouth-email-and-ways-to-organize-account-information-before-requesting-assistance">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/trouble-logging-into-bellsouth-email-recovery-information-exploring-account-assistance-and-email-settings">Trouble Logging Into BellSouth Email: Recovery Information</a></h3>
+          <p>Explore account assistance, recovery information, and email settings.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/trouble-logging-into-bellsouth-email-recovery-information-exploring-account-assistance-and-email-settings">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/unable-to-access-bellsouth-email-for-understanding-authentication-prompts-and-temporary-account-restrictions">Unable to Access BellSouth Email: Authentication Prompts</a></h3>
+          <p>Understand authentication prompts and temporary account restrictions.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/unable-to-access-bellsouth-email-for-understanding-authentication-prompts-and-temporary-account-restrictions">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/unable-to-access-bellsouth-email-recovery-information-managing-email-profile-and-security-preferences">Unable to Access BellSouth Email: Profile and Security Preferences</a></h3>
+          <p>Review email profile information and account security preferences.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/unable-to-access-bellsouth-email-recovery-information-managing-email-profile-and-security-preferences">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/unlock-bellsouth-email-account-for-reviewing-registered-contact-information-and-available-recovery-methods">Unlock BellSouth Email Account: Contact Information and Recovery</a></h3>
+          <p>Review registered contact details and available account recovery methods.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/unlock-bellsouth-email-account-for-reviewing-registered-contact-information-and-available-recovery-methods">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/unlock-bellsouth-email-account-login-restriction-assistance-exploring-available-recovery-procedures">Unlock BellSouth Email Account: Login Restriction Assistance</a></h3>
+          <p>Explore recovery procedures for an account affected by login restrictions.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/unlock-bellsouth-email-account-login-restriction-assistance-exploring-available-recovery-procedures">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/sign-into-my-bellsouth-email-account-after-a-connection-timed-out-message-prevents-inbox-loading">Sign Into BellSouth Email After a Connection Timed Out Message</a></h3>
+          <p>Review possible reasons an inbox may not load after a connection timeout.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/sign-into-my-bellsouth-email-account-after-a-connection-timed-out-message-prevents-inbox-loading">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/sign-into-my-bellsouth-email-account-email-access-preparation-checking-credentials-before-opening-your-inbox">Sign Into BellSouth Email: Check Credentials Before Opening Your Inbox</a></h3>
+          <p>Prepare your account information before accessing your mailbox.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/sign-into-my-bellsouth-email-account-email-access-preparation-checking-credentials-before-opening-your-inbox">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/bellsouth-email-login-when-the-verification-code-is-not-received-during-account-authentication">BellSouth Email Login When the Verification Code Is Not Received</a></h3>
+          <p>Review verification and authentication information when a code does not arrive.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/bellsouth-email-login-when-the-verification-code-is-not-received-during-account-authentication">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/access-your-bellsouth-email-with-a-closer-look-at-inbox-features-and-registered-account-information">Access BellSouth Email: Inbox Features and Account Information</a></h3>
+          <p>Learn about mailbox features and registered account information.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/access-your-bellsouth-email-with-a-closer-look-at-inbox-features-and-registered-account-information">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/access-your-bellsouth-email-dashboard-information-finding-important-features-within-your-mailbox">Access Your BellSouth Email Dashboard</a></h3>
+          <p>Find important features and information within your email mailbox.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/access-your-bellsouth-email-dashboard-information-finding-important-features-within-your-mailbox">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/how-to-reset-bellsouth-email-for-returning-users-managing-older-accounts-and-personal-email-correspondence">How to Reset BellSouth Email for Returning Users</a></h3>
+          <p>Review older account information and personal email correspondence.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/how-to-reset-bellsouth-email-for-returning-users-managing-older-accounts-and-personal-email-correspondence">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/how-to-reset-bellsouth-email-password-assistance-information-exploring-recovery-and-verification-options">How to Reset BellSouth Email Password</a></h3>
+          <p>Explore password recovery and account verification options.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/how-to-reset-bellsouth-email-password-assistance-information-exploring-recovery-and-verification-options">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/bellsouth-email-forgot-password-and-what-returning-users-should-know-about-restoring-email-access">BellSouth Email Forgot Password: Restoring Email Access</a></h3>
+          <p>Information for returning users who need to restore email access.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/bellsouth-email-forgot-password-and-what-returning-users-should-know-about-restoring-email-access">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/bellsouth-email-forgot-password-existing-account-support-understanding-recovery-requirements-and-settings">BellSouth Email Forgot Password: Existing Account Support</a></h3>
+          <p>Understand recovery requirements and existing account settings.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/bellsouth-email-forgot-password-existing-account-support-understanding-recovery-requirements-and-settings">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/how-to-restore-bellsouth-email-with-detailed-advice-about-account-identification-password-updates-and-mailbox-management">How to Restore BellSouth Email: Account Identification and Password Updates</a></h3>
+          <p>Review account identification, password updates, and mailbox management.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/how-to-restore-bellsouth-email-with-detailed-advice-about-account-identification-password-updates-and-mailbox-management">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/how-to-restore-bellsouth-email-review-recovery-information-navigate-password-reset-and-verification-steps">How to Restore BellSouth Email: Password Reset and Verification</a></h3>
+          <p>Review recovery information and password verification steps.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/how-to-restore-bellsouth-email-review-recovery-information-navigate-password-reset-and-verification-steps">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/how-to-recover-bellsouth-email-and-understand-the-different-steps-involved-in-restoring-an-established-email-profile">How to Recover BellSouth Email and Restore an Established Profile</a></h3>
+          <p>Understand the steps involved in restoring an established email profile.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/how-to-recover-bellsouth-email-and-understand-the-different-steps-involved-in-restoring-an-established-email-profile">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/how-to-recover-bellsouth-email-update-forgotten-credentials-manage-your-registered-mailbox-information">How to Recover BellSouth Email: Forgotten Credentials</a></h3>
+          <p>Review forgotten credentials and registered mailbox information.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/how-to-recover-bellsouth-email-update-forgotten-credentials-manage-your-registered-mailbox-information">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/change-my-bellsouth-email-password-to-refresh-account-credentials-and-improve-approach-to-email-account-maintenance">Change My BellSouth Email Password</a></h3>
+          <p>Refresh account credentials and review email account maintenance.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/change-my-bellsouth-email-password-to-refresh-account-credentials-and-improve-approach-to-email-account-maintenance">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/change-my-bellsouth-email-password-update-mailbox-information-understand-the-available-account-settings">Change My BellSouth Email Password: Mailbox Settings</a></h3>
+          <p>Review mailbox information and available account settings.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/change-my-bellsouth-email-password-update-mailbox-information-understand-the-available-account-settings">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/restore-my-bellsouth-email-account-identify-your-existing-profile-explore-email-access-and-verification-steps">Restore My BellSouth Email Account: Profile and Verification</a></h3>
+          <p>Identify your existing profile and review email access information.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/restore-my-bellsouth-email-account-identify-your-existing-profile-explore-email-access-and-verification-steps">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/restore-my-bellsouth-email-account-and-learn-how-to-retrieve-your-existing-mailbox-without-creating-a-replacement-address">Restore My BellSouth Email Account Without Creating a Replacement</a></h3>
+          <p>Learn about retrieving an existing mailbox and email address.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/restore-my-bellsouth-email-account-and-learn-how-to-retrieve-your-existing-mailbox-without-creating-a-replacement-address">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/recovering-bellsouth-email-for-returning-subscribers-who-want-to-reconnect-with-their-established-email-communication-history">Recovering BellSouth Email for Returning Subscribers</a></h3>
+          <p>Reconnect with an established email communication history.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/recovering-bellsouth-email-for-returning-subscribers-who-want-to-reconnect-with-their-established-email-communication-history">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/recovering-bellsouth-email-understand-recovery-options-find-guidance-for-returning-mailbox-users">Recovering BellSouth Email: Recovery Options</a></h3>
+          <p>Find guidance about recovery options for returning mailbox users.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/recovering-bellsouth-email-understand-recovery-options-find-guidance-for-returning-mailbox-users">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/bellsouth-email-password-recovery-for-understanding-the-process-of-retrieving-access-to-your-email-inbox">BellSouth Email Password Recovery: Regaining Inbox Access</a></h3>
+          <p>Understand the process of retrieving access to your email inbox.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/bellsouth-email-password-recovery-for-understanding-the-process-of-retrieving-access-to-your-email-inbox">Read article →</a>
+        </article>
+
+        <article class="article-card">
+          <h3><a href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/bellsouth-email-password-recovery-retrieve-forgotten-credentials-navigate-recovery-process">BellSouth Email Password Recovery: Forgotten Credentials</a></h3>
+          <p>Review forgotten credential recovery and account access information.</p>
+          <a class="read-link" href="https://knowledgeeffortbellsouth.zohodesk.com/portal/en/kb/articles/bellsouth-email-password-recovery-retrieve-forgotten-credentials-navigate-recovery-process">Read article →</a>
+        </article>
+
+      </div>
+
+      <div class="no-results" id="noResults">
+        No matching articles found. Try a different search term.
+      </div>
+    </section>
+
+    <section class="info-section">
+      <h2>About This BellSouth Email Article Directory</h2>
+      <p>
+        This directory brings together articles about BellSouth email access,
+        login questions, password recovery, verification, account settings,
+        and mailbox management.
+      </p>
+      <p>
+        Use the search field to find topics quickly, or browse the article
+        links above to open the information you need.
+      </p>
+      <p>
+        This is an independent informational article directory and is not
+        presented as an official BellSouth or AT&T support website.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>BellSouth Email Help Center – Informational Article Directory</p>
+    <p>Browse the available articles for general email account guidance.</p>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById("articleSearch");
+    const articleCards = document.querySelectorAll(".article-card");
+    const noResults = document.getElementById("noResults");
+
+    searchInput.addEventListener("input", function () {
+      const searchTerm = this.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      articleCards.forEach(function (card) {
+        const articleText = card.textContent.toLowerCase();
+        const matches = articleText.includes(searchTerm);
+
+        card.style.display = matches ? "flex" : "none";
+
+        if (matches) {
+          visibleCount++;
+        }
+      });
+
+      noResults.style.display = visibleCount === 0 ? "block" : "none";
+    });
+  </script>
+
+</body>
+</html>
